@@ -6,20 +6,29 @@ body {
 }
 
 header {
-    flex: 0 1 250px;
+    flex: 0 1 220px;
+    background-color: #ccc;
+    padding: 0 15px;
 }
 
 main {
     flex: 1;
+    padding: 0 15px;
 }
 
 nav {
     align-self: stretch;
 }
 
+.my_name{
+    display: inline-block;
+    text-align: left;
+}
+
 @media screen and (max-width: 600px) {
     header {
         flex: 1 1 auto;
+        text-align: center;
     }
 
     body {
@@ -29,6 +38,12 @@ nav {
     nav ul {
         display: flex;
         flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    nav li {
+        margin: 0 0px;
     }
 }
 
