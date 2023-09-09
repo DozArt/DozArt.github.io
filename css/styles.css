@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+    flex: 0 1 250px;
+}
+
+main {
+    flex: 1;
+}
+
+nav {
+    align-self: stretch;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex: 1 1 auto;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+main img {
+    width: 100px;
+}
