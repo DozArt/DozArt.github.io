@@ -1,28 +1,51 @@
+html{
+    background-color: #444;
+}
+
 body {
-  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-    flex: 0 1 220px;
+    flex: 0 1 200px;
     background-color: #ccc;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 main {
     flex: 1;
     padding: 0 15px;
+    background-color: white;
 }
 
 nav {
     align-self: stretch;
 }
 
+.container_about_my {
+    display: flex;
+    flex-direction: column;
+}
+
+.my_photo {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.my_photo img{
+    width: 200px;
+    display: block;
+}
+
 .my_name{
     display: inline-block;
     text-align: left;
+    padding: 0 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -40,11 +63,14 @@ nav {
         flex-direction: row;
         list-style-type: none;
         padding: 0;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
-    nav li {
-        margin: 0 0px;
+
+    .container_about_my {
+        flex-direction: row;
+        justify-content: center;
     }
+
 }
 
 main img {
