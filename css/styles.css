@@ -12,7 +12,7 @@ body {
 
 header {
     flex: 0 1 200px;
-    background-color: #ccc;
+    background-color: #e5d7cd;
     padding: 15px;
 }
 
@@ -40,16 +40,18 @@ nav {
 .my_photo img{
     width: 200px;
     display: block;
+    border-radius: 10px;
 }
 
 .my_name{
     display: inline-block;
     text-align: left;
     padding: 0 10px;
-    min-width: 140px;
+    min-width: 160px;
 }
 
 @media screen and (max-width: 600px) {
+
     header {
         flex: 1 1 auto;
         text-align: center;
@@ -73,8 +75,18 @@ nav {
         justify-content: center;
     }
 
+    .my_photo img {
+        width:120px;
+    }
+
 }
 
 main img {
     width: 100px;
+    transition: transform .2s;
+}
+main img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
 }
